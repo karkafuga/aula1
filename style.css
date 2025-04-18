@@ -1,0 +1,132 @@
+/* reset e layout básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #383838;
+  }
+  
+  /* container principal */
+  .container {
+    margin: 20px;
+    height: calc(100vh - 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /* Boxes padrão */
+  .box {
+    background-color: #ffffff;
+    border: 5px solid #5c057e;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  
+  /* Cabeçalho */
+  .header-box h1 {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .name {
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  .title {
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  /* Descrição com foto ao lado em quadrado */
+  .desc-section {
+    display: flex;
+    gap: 16px;
+  }
+  .desc-box {
+    flex: 2;
+  }
+  .photo-box {
+    flex: 1;
+    background-color: #fff;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+  }
+  .photo-box img {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  /* Skills + decorativa lado a lado */
+  .lower-section {
+    display: flex;
+    gap: 16px;
+  }
+  .skills-box {
+    flex: 2;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 12px;
+  }
+  .skill-item {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px;
+    text-align: center;
+  }
+  .skill-item img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 6px;
+  }
+  /* caixa decorativa para ilustração */
+  .decor-box {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .decor-box img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Contato à direita, sem box */
+  .contact {
+    text-align: left;
+  }
+  .contact h2 {
+    margin-bottom: 8px;
+  }
+  .social-icons {
+    display: inline-flex;
+    gap: 16px;
+  }
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  
